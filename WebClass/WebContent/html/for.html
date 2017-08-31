@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+background:gray;
+}
+h1{
+text-align:center;
+font-family:"나눔고딕";
+color:white;
+}
+h2,h5{
+text-align:left;
+font-family:"Lucida Sans TypeWriter";
+color:white;
+text-shadow: 2px 2px#00ffff
+}
+</style>
+<script>
+function sum(){
+	var num = Number(document.getElementById("num").value);
+	document.getElementById("answ").innerHTML= num*(num+1)/2;
+}
+</script>
+</head>
+<body>
+<h1>Sigma</h1>
+<hr>
+<br>
+<input type="text" id="num" size="5"/>
+<input type="button" onclick="sum();" value="button is">
+<h3 id = "answ"></h3>
+
+</body>
+</html>

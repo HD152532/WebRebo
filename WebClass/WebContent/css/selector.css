@@ -1,0 +1,8 @@
+@CHARSET "utf-8";
+/* 주석 */
+*{color: blue;text-align: center;}
+#text1{font-weight: bold;}
+h1{background-color: yellow;border: 2px solid;}
+h3{color: pink;text-align: right;}
+ 
+}

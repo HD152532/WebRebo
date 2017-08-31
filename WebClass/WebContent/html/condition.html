@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+background:gray;
+}
+h1{
+text-align:center;
+font-family:"나눔고딕";
+color:white;
+}
+h2,h5{
+text-align:left;
+font-family:"Lucida Sans TypeWriter";
+color:white;
+text-shadow: 2px 2px#00ffff
+}
+</style>
+<script>
+function func(){
+	var a = Number(document.getElementById("text1").value);
+	var b = Number(document.getElementById("text2").value);
+	var judge  = document.getElementById("male").checked;
+	if(a>=16 &&a<=69){
+		if(judge){
+			if(b>=50){
+				document.getElementById("text3").innerHTML = "GOOD";
+			}
+			else
+				document.getElementById("text3").innerHTML = "WEIGHT PROBLEM";
+		}
+		else{
+			if(b>=45)
+				document.getElementById("text3").innerHTML = "GOOD";
+			else
+				document.getElementById("text3").innerHTML = "WEIGHT PROBLEM";
+		}
+	}
+	else{
+		document.getElementById("text3").innerHTML= "AGE PROBLEM"
+	}
+}
+</script>
+</head>
+<body>
+<h1>헌혈 조건 체크</h1>
+<hr>
+<br>
+<h2>age: <input type="text" id="text1" size ="5"/><br>
+gender:
+man<input type="radio" name="gender" id="male" checked>
+woman<input type="radio" name="gender" id="female"><br>
+weight <input type="text" id="text2" size="5"/>kg<br>
+<br><input type="button" onclick="func();" value="Check">
+</h2>
+<h5 id="text3"></h5>
+
+</body>
+</html>

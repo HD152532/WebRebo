@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function korean(){
+	alert('안녕하세요!!');
+}
+function american(){
+	alert('hello');
+}
+function chinese(){
+	alert('니하오');
+}
+function greeting(nation){
+	console.log("greeting start");
+	if(nation=='k'){
+		document.getElementById("result").innerHTML = "안녕하세요";	
+		}
+	if(nation =='a'){
+		document.getElementById("result").innerHTML = "hello";
+	}
+	if(nation =='c'){
+		document.getElementById("result").innerHTML = "니 하오";
+	}
+	console.log("greeting end");
+}
+
+</script>
+</head>
+<body>
+각 나라의 인삿말<br><br>
+<input type="button" onclick="greeting('k');" value="한국">
+<input type="button" onclick="greeting('c');" value="중국">
+<input type="button" onclick="greeting('a');" value="미국"><br>
+<p id="result"></p>
+</body>
+</html>
