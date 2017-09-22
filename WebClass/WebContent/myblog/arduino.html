@@ -1,0 +1,252 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/blogcss.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	</head>
+	<body>
+	
+	<!-- navbar 부분 -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="blog2.html">
+	  	tjrcjf.BLog
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item" onmouseover="menu_over(this)" onmouseout="menu_out(this)">
+	        <a class="nav-link" href="profile.html">Profile</a>
+	      </li>
+	      <li class="nav-item" onmouseover="menu_over(this)" onmouseout="menu_out(this)">
+	        <a class="nav-link" href="arduino.html">Arduino</a>
+	      </li>
+	      <li class="nav-item" onmouseover="menu_over(this)" onmouseout="menu_out(this)">
+	        <a class="nav-link" href="song.html">Song</a>
+	      </li>
+	    </ul>
+	    <form>
+	    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signupModal">Sign up</button>
+	    </form>
+	    <form class="form-inline my-2 my-lg-0" id = "LoginForm">
+	      <input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="id" id="id" required>
+	      <input class="form-control mr-sm-2" type="password" placeholder="PASSWORD" aria-label="pwd" id="pwd" required>
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+	    </form>
+	  </div>
+	</nav>
+	
+	
+	<div class="container-fluid" id="fixed">
+	    <h3 class="text-light">
+	  		석철이의
+	  	<small class="text-secondary">블로그</small>
+		</h3>
+	</div>
+	
+	<div class="container">
+	<div class="row">
+		<div class="card bg-dark text-white w-50 h-50" >
+	  <img class="card-img" src="../image/arduino.jpg" alt="Card image">
+	  <div class="card-img-overlay">
+	    <h4 class="card-title">Arduino</h4>
+	    <p class="card-text">아두이노로 상상에 날개를 달다</p>
+	  </div>
+		</div>
+		<div class="card bg-dark text-white w-50 h-50" >
+	  <img class="card-img" src="../image/raspberry.jpg" alt="Card image">
+	  <div class="card-img-overlay">
+	    <h4 class="card-title">Raspberry Pi</h4>
+	    <p class="card-text">라즈베리파이로 손쉽게 서버를 구동하자</p>
+	  </div>
+		</div>
+	</div>
+	<div class="list-group">
+  <a href="http://www.whydsp.org/339" class="list-group-item list-group-item-success list-group-item-action  flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Arduino Quad Coaper DIY</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">PID 제어, MCU-6050 값 읽기, 하드웨어 설계, 블루투스 통신에 대해 배우고 각각을 드론에 적용하는 방법을 배운다.</p>
+    <small>고난도</small>
+  </a>
+  <a href="http://mazdah.tistory.com/695" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Arduino 4-legs Robot</h5>
+      <small class="text-muted">3 weeks ago</small>
+    </div>
+    <p class="mb-1">아두이노, 서보모터로 만드는 스타 드라군 만들기</p>
+    <small class="text-muted">중고난도.</small>
+  </a>
+  <a href="http://blog.0xff.co.kr/41" class="list-group-item list-group-item-action list-group-item-danger flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">아두이노 라인트레이서 만들기            </h5>
+      <small class="text-muted">3 months ago</small>
+    </div>
+    <p class="mb-1">아두이노로 만드는 기초 로봇            </p>
+    <small class="text-muted">완전 쉬움</small>
+  </a>
+   <a href="http://blog.naver.com/PostView.nhn?blogId=tipsware&logNo=221006882546&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView" class="list-group-item list-group-item-warning-action list-group-item-warning flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">라즈베리 파이 실습</h5>
+      <small class="text-muted">3 months ago</small>
+    </div>
+    <p class="mb-1">라즈베리 파이로 여러가지를 해보자</p>
+    <small class="text-muted">잘모름</small>
+  </a>
+</div>
+
+	<div class="container">
+		
+	</div>
+</div>
+	
+	
+	
+	<!--  회원 가입 모달 -->
+	<div class="modal" id="signupModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Sign up</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      
+	      
+	      <div class="modal-body">
+	      <div class="container">
+	  <form id="signupForm">
+	  <!-- 이름 -->
+	    <div class="form-group row">
+	      <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+	      </div>
+	    </div>
+	    <!-- 번호 -->
+	    <div class="form-group row">
+	      <label for="inputNumber" class="col-sm-2 col-form-label">Number</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="inputNumber" placeholder="Number" required>
+	      </div>
+	    </div>
+	    <!-- 학년 -->
+	    
+	    <fieldset class="form-group">
+	    <legend class="col-form-legend col-sm-2">학년</legend>
+	      <div class="row">
+	        
+	        <div class="col-sm-10">
+	          <div class="form-check">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="radio" name="gridRadios" id="grade1" value="option1" checked>
+	              1학년
+	            </label>
+	          </div>
+	          <div class="form-check">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="radio" name="gridRadios" id="grade2" value="option2">
+	              2학년
+	            </label>
+	          </div>
+	          <div class="form-check">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="radio" name="gridRadios" id="grade3" value="option3">
+	              3학년
+	            </label>
+	          </div>
+	        </div>
+	      </div>
+	    </fieldset>
+	    <div class="form-group">
+	    <label for="exampleFormControlSelect1">반</label>
+	    <select class="form-control" id="exampleFormControlSelect1">
+	      <option>1</option>
+	      <option>2</option>
+	      <option>3</option>
+	      <option>4</option>
+	      <option>5</option>
+	      <option>6</option>
+	    </select>
+	  </div>
+	    <div class="form-group row">
+	      <div class="col-sm-10">
+	        <button type="submit" class="btn btn-outline-primary">Sign up</button>
+	      </div>
+	    </div>
+	  </form>
+	</div>
+	      </div>
+	      
+	      
+	    </div>
+	  </div>
+	</div>
+	
+	<!--  회원가입 성공 모달 -->
+	<div class="modal" id="signupsucmodal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Sign up Result</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!--  로그인 성공 모달 -->
+	<div class="modal" id="lgmodal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Login Result</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<footer class="py-1 bg-dark">
+      <div class="container">
+         <p class="m-0 text-center text-white">
+            Jeong seok-chul's blog &copy; Telephone : 010-4139-3756 <br>
+            Kakao Talk ID : tjrcf410@naver.com <br> Class: 2-5 Number:
+            32
+         </p>
+         <br>
+      </div>
+      <!-- /.container -->
+   </footer>
+	<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src= "../js/blogscript.js"></script>
+	    
+	</body>
+	</html>

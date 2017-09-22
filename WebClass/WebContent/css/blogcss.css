@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+#fixed{
+	text-align:center;
+	background-color:#FFD8D8;
+	padding:5px;
+}
+#text{
+	margin-left:600px;
+}
+.card-border-secondary{
+	max-width:20rem;
+}
+.card-border-warning{
+	max-width:20rem;
+}
+.card-border-info{
+	max-width:20rem;
+}
+.card-border-dark{
+	max-width:20rem;
+}
+.card-border-danger{
+	max-width:20rem;
+}
+#image1{
+	width:50%;
+}
