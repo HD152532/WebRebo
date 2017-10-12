@@ -42,13 +42,14 @@
     	if(user == null){
     %>
     <form>
-    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signupModal">Sign up</button>
+    
     </form>
     <form class="form-inline my-2 my-lg-0" id = "LoginForm" action="/WebClass/bloglogin" method="post">
       <input name="id" class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="id" id="id" value = "<%= (request.getAttribute("msg") == null) ? "" : request.getParameter("id") %>" required>
       <input name="pwd" class="form-control mr-sm-2" type="password" placeholder="PASSWORD" aria-label="pwd" id="pwd" required>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
     </form>
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#signupModal">Sign up</button>
     <%}else{ %>
     <%-- 세션에 사용자 정보가 있는 경우 --%>
 	    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
